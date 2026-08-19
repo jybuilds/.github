@@ -1,0 +1,31 @@
+name: "Feature"
+description: "새로운 기능을 제안하거나 구현합니다."
+title: "[FEAT] "
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "📌 작업 내용"
+      description: "구현할 기능에 대해 설명해주세요."
+      placeholder: "어떤 기능을 구현할 예정인지 작성해주세요."
+    validations:
+      required: true
+
+  - type: textarea
+    id: todo
+    attributes:
+      label: "✅ TODO"
+      description: "세부 작업 내용을 작성해주세요."
+      placeholder: |
+        - [ ] 작업 1
+        - [ ] 작업 2
+        - [ ] 작업 3
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: "💬 기타"
+      description: "추가로 공유할 내용이 있다면 작성해주세요."
