@@ -1,0 +1,50 @@
+name: "🐛 Bug"
+description: "발생한 버그를 제보합니다."
+title: "[BUG] "
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "🐛 버그 설명"
+      description: "어떤 문제가 발생했는지 설명해주세요."
+      placeholder: "발생한 문제를 작성해주세요."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: "🔄 재현 방법"
+      description: "버그를 재현할 수 있는 순서를 작성해주세요."
+      placeholder: |
+        1. 로그인한다.
+        2. 특정 버튼을 누른다.
+        3. 오류가 발생한다.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: "✅ 예상 동작"
+      description: "정상적으로는 어떻게 동작해야 하는지 작성해주세요."
+      placeholder: "예상했던 정상 동작을 작성해주세요."
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: "🖥 환경"
+      description: "문제가 발생한 환경을 작성해주세요."
+      placeholder: |
+        OS: macOS
+        Browser: Chrome
+        Version: 1.0.0
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: "💬 기타"
+      description: "스크린샷이나 추가 정보가 있다면 작성해주세요."
